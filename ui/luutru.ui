@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Danh sách Công văn</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_search">
+      <item>
+       <widget class="QLineEdit" name="txttimkiem">
+        <property name="styleSheet">
+         <string>
+          QLineEdit {
+              border: 2px solid #4CAF50;
+              border-radius: 5px;
+              padding: 5px;
+          }
+         </string>
+        </property>
+        <property name="placeholderText">
+         <string>Nhập số công văn, tiêu đề hoặc phòng ban...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btntimkiem">
+        <property name="styleSheet">
+         <string>
+          QPushButton {
+              background-color: #2196F3;
+              color: white;
+              border-radius: 5px;
+              padding: 5px;
+          }
+          QPushButton:hover {
+              background-color: #1976D2;
+          }
+         </string>
+        </property>
+        <property name="text">
+         <string>Tìm kiếm</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableLuuTru">
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Số công văn</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Tiêu đề</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nội dung</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>File đính kèm</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Phòng ban</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ngày tạo</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btntailai">
+        <property name="styleSheet">
+         <string>
+          QPushButton {
+              background-color: #4CAF50;
+              color: white;
+              border-radius: 5px;
+              padding: 5px;
+          }
+          QPushButton:hover {
+              background-color: #45a049;
+          }
+         </string>
+        </property>
+        <property name="text">
+         <string>Tải lại</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnxoa">
+        <property name="styleSheet">
+         <string>
+          QPushButton {
+              background-color: #f44336;
+              color: white;
+              border-radius: 5px;
+              padding: 5px;
+          }
+          QPushButton:hover {
+              background-color: #da190b;
+          }
+         </string>
+        </property>
+        <property name="text">
+         <string>Xóa</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnquaylai">
+        <property name="text">
+         <string>Quay lại</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

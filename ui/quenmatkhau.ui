@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QuenMatKhauForm</class>
+ <widget class="QMainWindow" name="QuenMatKhauForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quên Mật Khẩu</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string>background-color: #FFF9E6;</string>
+   </property>
+   <widget class="QLabel" name="lbl_title">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>20</y>
+      <width>400</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #F39C12; color: white; border-radius: 5px;</string>
+    </property>
+    <property name="text">
+     <string>QUÊN MẬT KHẨU</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_hoten">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>color: #333333;</string>
+    </property>
+    <property name="text">
+     <string>Họ và tên:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_hoten">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>80</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #FFFFFF; border: 1px solid #27AE60; border-radius: 5px; padding: 2px; color: #333333;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Nhập họ và tên</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_tdn">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>color: #333333;</string>
+    </property>
+    <property name="text">
+     <string>Tên đăng nhập:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_tdn">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>130</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #FFFFFF; border: 1px solid #27AE60; border-radius: 5px; padding: 2px; color: #333333;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Nhập tên đăng nhập</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_cauhoi1">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>300</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>color: #333333;</string>
+    </property>
+    <property name="text">
+     <string>Đội bóng bạn yêu thích là gì ?</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_cauhoi1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>220</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #FFFFFF; border: 1px solid #27AE60; border-radius: 5px; padding: 2px; color: #333333;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Nhập câu trả lời 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_cauhoi2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>270</y>
+      <width>300</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>color: #333333;</string>
+    </property>
+    <property name="text">
+     <string>Tên trường tiểu học của bạn là gì?</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_cauhoi2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>310</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #FFFFFF; border: 1px solid #27AE60; border-radius: 5px; padding: 2px; color: #333333;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Nhập câu trả lời 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_cauhoi3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>360</y>
+      <width>300</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>color: #333333;</string>
+    </property>
+    <property name="text">
+     <string>Tên thú cưng đầu tiên của bạn là gì?</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_cauhoi3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>400</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #FFFFFF; border: 1px solid #27AE60; border-radius: 5px; padding: 2px; color: #333333;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Nhập câu trả lời 3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_matkhaumoi">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>450</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>color: #333333;</string>
+    </property>
+    <property name="text">
+     <string>Mật khẩu mới:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_matkhaumoi">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>450</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #FFFFFF; border: 1px solid #27AE60; border-radius: 5px; padding: 2px; color: #333333;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Nhập mật khẩu mới</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_xacnhanmk">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>500</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>color: #333333;</string>
+    </property>
+    <property name="text">
+     <string>Xác nhận MK:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_xacnhanmk">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>500</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #FFFFFF; border: 1px solid #27AE60; border-radius: 5px; padding: 2px; color: #333333;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Nhập lại mật khẩu mới</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_xacnhan">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>550</y>
+      <width>141</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #27AE60; color: white; border-radius: 5px;</string>
+    </property>
+    <property name="text">
+     <string>Xác nhận</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_thoat">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>550</y>
+      <width>141</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #E67E22; color: white; border-radius: 5px;</string>
+    </property>
+    <property name="text">
+     <string>Thoát</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

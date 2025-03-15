@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Danh Sách Công Văn Đã Phê Duyệt</string>
+  </property>
+  <property name="styleSheet">
+   <string>background-color: #F0F4F8;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="searchLayout">
+      <item>
+       <widget class="QLineEdit" name="txtTimKiem">
+        <property name="styleSheet">
+         <string>background-color: white; border: 1px solid #CCCCCC; border-radius: 4px; padding: 5px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Nhập từ khóa tìm kiếm...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnTimKiem">
+        <property name="styleSheet">
+         <string>background-color: #4CAF50; color: white; border: none; border-radius: 4px; padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Tìm Kiếm</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLamMoi">
+        <property name="styleSheet">
+         <string>background-color: #2196F3; color: white; border: none; border-radius: 4px; padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Làm Mới</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableCongVanPheDuyet">
+      <property name="styleSheet">
+       <string>background-color: white; border: 1px solid #E0E0E0; selection-background-color: #BBDEFB;</string>
+      </property>
+      <property name="columnCount">
+       <number>7</number>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>150</number>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Số Công Văn</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Loại Công Văn</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Người Phê Duyệt</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Trạng Thái</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ghi Chú</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ngày Phê Duyệt</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <item>
+       <widget class="QPushButton" name="btnQuayLai">
+        <property name="styleSheet">
+         <string>background-color: #FF9800; color: white; border: none; border-radius: 4px; padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Quay Lại</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnxoa">
+        <property name="styleSheet">
+         <string>background-color: #F44336; color: white; border: none; border-radius: 4px; padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Xóa</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

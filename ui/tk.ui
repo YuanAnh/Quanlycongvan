@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>bctk</class>
+ <widget class="QWidget" name="bctk">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>615</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Báo Cáo Thống kê</string>
+  </property>
+  <property name="styleSheet">
+   <string>background-color: #F0F4F8;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="lblTitle">
+     <property name="styleSheet">
+      <string>background-color: #81D4FA; color: white; border-radius: 5px; font-weight: bold; font-size: 14pt;</string>
+     </property>
+     <property name="text">
+      <string>Thống Kê Công Văn Đi</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tabletk">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string>background-color: #FFFFFF; border: 1px solid #D5DCE8; QHeaderView::section { background-color: #81D4FA; color: white; }</string>
+     </property>
+     <property name="columnCount">
+      <number>2</number>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>200</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Trạng Thái</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Số Lượng Công Văn</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblTitle">
+     <property name="styleSheet">
+      <string>background-color: #81D4FA; color: white; border-radius: 5px; font-weight: bold; font-size: 14pt;</string>
+     </property>
+     <property name="text">
+      <string>Thống Kê Công Văn Đến</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tabletk1">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string>background-color: #FFFFFF; border: 1px solid #D5DCE8; QHeaderView::section { background-color: #81D4FA; color: white; }</string>
+     </property>
+     <property name="columnCount">
+      <number>2</number>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>200</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Trạng Thái</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Số Lượng Công Văn</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblTitle">
+     <property name="styleSheet">
+      <string>background-color: #81D4FA; color: white; border-radius: 5px; font-weight: bold; font-size: 14pt;</string>
+     </property>
+     <property name="text">
+      <string>Báo Cáo Tổng Hợp</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tabletk2">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string>background-color: #FFFFFF; border: 1px solid #D5DCE8; QHeaderView::section { background-color: #81D4FA; color: white; }</string>
+     </property>
+     <property name="columnCount">
+      <number>1</number>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>200</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Số Lượng Công Văn</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="back">
+     <item>
+      <widget class="QPushButton" name="btnback">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #D5DBDB; color: #333333; border-radius: 5px; font-size: 14px;</string>
+       </property>
+       <property name="text">
+        <string>Quay Lại</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1111</width>
+    <height>642</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Danh Sách Công Văn Đến</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string>background-color: #F0F4F8;</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="lblTitle">
+      <property name="styleSheet">
+       <string>background-color: #81D4FA; color: white; border-radius: 5px; font-weight: bold; font-size: 14pt;</string>
+      </property>
+      <property name="text">
+       <string>DANH SÁCH CÔNG VĂN ĐẾN</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="searchLayout">
+      <item>
+       <widget class="QLabel" name="lblTimKiem">
+        <property name="styleSheet">
+         <string>color: #333333;</string>
+        </property>
+        <property name="text">
+         <string>Tìm kiếm:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="txtTimKiem">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: #FFFFFF; border: 1px solid #81D4FA; border-radius: 5px; padding: 2px; color: #333333;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnTimKiem">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: #B3E5FC; color: #333333; border-radius: 5px; font-size: 14px;</string>
+        </property>
+        <property name="text">
+         <string>Tìm</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLamMoi">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: #B3E5FC; color: #333333; border-radius: 5px; font-size: 14px;</string>
+        </property>
+        <property name="text">
+         <string>Làm Mới</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableCongVan">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>background-color: #FFFFFF; border: 1px solid #D5DCE8; QHeaderView::section { background-color: #81D4FA; color: white; }</string>
+      </property>
+      <property name="columnCount">
+       <number>9</number>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Số Công Văn</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ngày Nhận</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nơi Gửi</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nội Dung</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Trạng Thái</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Phòng Ban Phụ Trách</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Link Đính Kèm</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Createdat</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="actionLayout">
+      <item>
+       <widget class="QPushButton" name="btnxoa">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: #B3E5FC; color: #333333; border-radius: 5px; font-size: 14px;</string>
+        </property>
+        <property name="text">
+         <string>Xóa công văn</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnpheduyet">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: #B3E5FC; color: #333333; border-radius: 5px; font-size: 14px;</string>
+        </property>
+        <property name="text">
+         <string>Phê Duyệt</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnluutru">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: #B3E5FC; color: #333333; border-radius: 5px; font-size: 14px;</string>
+        </property>
+        <property name="text">
+         <string>Lưu Trữ</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnchitiet">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: #B3E5FC; color: #333333; border-radius: 5px; font-size: 14px;</string>
+        </property>
+        <property name="text">
+         <string>Chi Tiết</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnback">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: #B3E5FC; color: #333333; border-radius: 5px; font-size: 14px;</string>
+        </property>
+        <property name="text">
+         <string>Quay Lại</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1111</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

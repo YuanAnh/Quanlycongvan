@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterForm</class>
+ <widget class="QWidget" name="RegisterForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Đăng Ký Tài Khoản</string>
+  </property>
+  <property name="styleSheet">
+   <string>background-color: #F5F5F5;</string>
+  </property>
+  <!-- Tiêu đề -->
+  <widget class="QLabel" name="label_title">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>250</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Đăng Ký Tài Khoản</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #2C3E50; color: white; border-radius: 5px;</string>
+   </property>
+  </widget>
+  <!-- USER ID -->
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>USER ID:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #333333;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtid">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>60</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+  </widget>
+  <!-- Tên đăng nhập -->
+  <widget class="QLabel" name="label_username">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tên đăng nhập:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #333333;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtusername">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>100</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+  </widget>
+  <!-- Mật khẩu -->
+  <widget class="QLabel" name="label_password">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>140</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mật khẩu:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #333333;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtmk">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>140</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+  </widget>
+  <!-- Xác nhận mật khẩu -->
+  <widget class="QLabel" name="label_confirm_password">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>180</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Xác nhận mật khẩu:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #333333;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtxnmk">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>180</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+  </widget>
+  <!-- Họ và tên -->
+  <widget class="QLabel" name="label_fullname">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>220</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Họ và tên:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #333333;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txthoten">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>220</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+  </widget>
+  <!-- Email -->
+  <widget class="QLabel" name="label_email">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>260</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Email:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #333333;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtemail">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>260</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+  </widget>
+  <!-- Số điện thoại -->
+  <widget class="QLabel" name="label_phone">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>300</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Số điện thoại:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #333333;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtsdt">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>300</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+  </widget>
+  <!-- Vai trò -->
+  <widget class="QLabel" name="label_role">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>340</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Vai trò:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #333333;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbrole">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>340</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Admin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Nhân viên văn thư</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Lãnh đạo</string>
+    </property>
+   </item>
+  </widget>
+  <!-- Ngày sinh -->
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>380</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ngày sinh:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #333333;</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>380</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+  </widget>
+  <!-- Giới tính -->
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>420</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Giới tính:</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #333333;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbgioitinh">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>420</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Nam</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Nữ</string>
+    </property>
+   </item>
+  </widget>
+  <!-- Câu hỏi bảo mật -->
+  <widget class="QLabel" name="label_cauhoi1">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>460</y>
+     <width>350</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Câu hỏi 1: Đội bóng bạn yêu thích là gì?</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #8E44AD;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtcau1">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>480</y>
+     <width>350</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_cauhoi2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>510</y>
+     <width>350</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Câu hỏi 2: Tên trường tiểu học của bạn là gì?</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #8E44AD;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtcau2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>530</y>
+     <width>350</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_cauhoi3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>560</y>
+     <width>350</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Câu hỏi 3: Tên thú cưng đầu tiên của bạn là gì?</string>
+   </property>
+   <property name="styleSheet">
+    <string>color: #8E44AD;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtcau3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>580</y>
+     <width>350</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #FFFFFF; border: 1px solid #3498DB; border-radius: 3px; padding: 2px; color: #333333;</string>
+   </property>
+  </widget>
+  <!-- Nút bấm -->
+  <widget class="QPushButton" name="btndangki">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>610</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Đăng Ký</string>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #3498DB; color: white;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnquaylai">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>610</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quay lại</string>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: #BDC3C7; color: #333333;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
