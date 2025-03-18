@@ -7,7 +7,7 @@ from PyQt6 import uic
 class DangkyApp(QMainWindow):
     def __init__(self, login_window=None):
         super(DangkyApp, self).__init__()
-        uic.loadUi('Source/ui/dangki.ui', self)
+        uic.loadUi('ui/dangki.ui', self)
         self.db = None
         self.cursor = None
         self.login_window = login_window
