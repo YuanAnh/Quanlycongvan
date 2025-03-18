@@ -121,7 +121,7 @@ class TrangChuCongVan(QtWidgets.QMainWindow):
 
 
             if not self.login_window:
-                from login import LoginApp 
+                from main import LoginApp 
                 self.login_window = LoginApp()
             
                 self.login_window.txt_username.clear()
